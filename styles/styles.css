@@ -29,3 +29,38 @@ nav li a:hover{
 article img{
     width:60%;
 }
+
+/* ***********************************************************************************
+                                In-class styles
+**************************************************************************************/
+
+/* we can style elements based on their "focus", wether they are active or not
+(usually when a user has selected them) */
+
+input:focus {
+    border: 2px solid red;
+    color: blueviolet;
+}
+
+/* hide the skip links using the position property */
+.skip-links ul {
+    list-style: none;
+    position: relative;
+}
+
+.skip-links a {
+    /* move them above the top of the page using the position absolute */
+    position: absolute;
+    top: -10em;
+}
+
+.skip-links a:focus {
+    top: 0;
+    background-color: darkorange;
+    display: block;
+    padding: 10px;
+}
+
+#tycheInfo:focus {
+    background: aqua;
+}
